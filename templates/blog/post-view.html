@@ -1,0 +1,17 @@
+{% extends 'partials/base.html' %}
+
+{% block content %}
+
+<div style="margin-top:120px; width: 500px; height: 500px; object-fit: cover;" class="container">
+
+<figure class="figure bg-light">
+  <img src="{{post.image.url}}" class="img-thumbnail" alt="...">
+  <figcaption class="figure-caption text-end"><h1>{{post.title}}</h1></figcaption>
+    <p>{{post.content}}</p>
+<strong>{{post.date}}</strong>
+
+</figure>
+</div>
+
+
+{% endblock %}
