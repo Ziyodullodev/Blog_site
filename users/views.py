@@ -14,5 +14,4 @@ def SignUpView(request):
     context = {
         "forms":form
     }
-
     return render(request, 'users/sign_up.html', context)
